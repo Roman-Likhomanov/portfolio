@@ -1,0 +1,28 @@
+.footerBlock {
+    min-height: 50vh;
+    background-color: lightblue;
+}
+
+.footerContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.socialContainer {
+    border: 1px solid;
+    width: 285px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.social {
+    width: 50px;
+    height: 60px;
+    background-color: gainsboro;
+}
+
+.title {
+    background-color: yellow;
+}
