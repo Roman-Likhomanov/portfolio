@@ -1,6 +1,8 @@
 .contactsBlock {
     min-height: 100vh;
-    background-color: lightgreen;
+    background-color: #fff;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .contactsContainer {
@@ -9,29 +11,100 @@
 }
 
 .contactsForm {
-    width: 285px;
-    height: 250px;
+    width: 50%;
     border: 1px solid;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
-.contactsForm input {
-    padding: 5px;
+.contactsInput {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactsInput input{
+    margin-bottom: 20px;
+    padding: 8px;
+    border: solid 1px rgba(0, 0, 0, .2);
+    width: 31%;
 }
 
 .contactsForm textarea {
-     height: 50%;
- }
+    width: 100%;
+    min-height: 120px;
+    margin-bottom: 20px;
+}
 
 .button {
+    align-self:center;
     border: 1px solid;
-    padding: 5px;
-    background-color: lightgrey;
+    background-color: #D95435;
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8em;
+    word-spacing: 0px;
 }
 
-.title {
-    background-color: yellow;
+.contactsMe {
+    margin-top: 60px;
+    display: flex;
 }
+
+.contactsMe p{
+   color: #909090;
+}
+
+.contactsMeEmail, .contactsMePhone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px 0 12px;
+}
+
+
+
+
+@media screen and (max-width: 605px) {
+    .contactsForm {
+        width: 100%;
+    }
+    .contactsInput {
+        flex-direction: column;
+    }
+    .contactsInput input{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 606px) and (max-width: 850px) {
+    .contactsForm {
+        width: 70%;
+    }
+    .contactsInput {
+        flex-direction: column;
+    }
+    .contactsInput input{
+       width: 100%;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1150px) {
+    .contactsInput {
+        flex-direction: column;
+    }
+    .contactsInput input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .contactsMe {
+      flex-direction: column;
+    }
+}
+

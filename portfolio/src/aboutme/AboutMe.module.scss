@@ -1,0 +1,36 @@
+.aboutMeBlock {
+    min-height: 100vh;
+    background-color: #fff;
+    padding-top: 90px;
+    .aboutMeContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        .aboutMe {
+            border: 1px solid;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .title {
+                background-color: yellow;
+            }
+        }
+    }
+}
+
+.aboutMeContainer p {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    color: #909090;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 629px) {
+    .aboutMe {
+        justify-content: center;
+    }
+}

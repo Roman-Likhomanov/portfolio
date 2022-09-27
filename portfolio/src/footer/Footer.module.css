@@ -1,28 +1,34 @@
 .footerBlock {
-    min-height: 50vh;
-    background-color: lightblue;
+    background-color: #F6F6F6;
 }
 
 .footerContainer {
-    flex-direction: column;
-    justify-content: flex-start;
+    min-height: 80px;
 }
 
-.socialContainer {
+.socialIconsContainer {
     border: 1px solid;
-    width: 285px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    align-items: center;
 }
 
-.social {
-    width: 50px;
-    height: 60px;
-    background-color: gainsboro;
+.socialIcon {
+    width: 30px;
+    height: 30px;
+    margin:0 30px 0 30px;
 }
 
 .title {
-    background-color: yellow;
+    color: #202020;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+    word-spacing: 0px;
+}
+
+@media screen and (max-width: 667px) {
+    .footerContainer {
+       justify-content: center;
+    }
 }
