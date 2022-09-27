@@ -1,0 +1,16 @@
+@import '../../styles/sass/variables';
+
+.title {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: $primaryColor;
+        width: 55px;
+        height: 2px;
+        top: 62px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+

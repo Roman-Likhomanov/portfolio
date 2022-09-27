@@ -1,0 +1,30 @@
+@import '../common/styles/sass/variables';
+
+.mainBlock {
+  //min-height: calc(100vh - 80px);
+  min-height: 100vh;
+  background-color: $bgColor;
+
+  .text {
+    width: 400px;
+  }
+
+  .photo {
+    width: 400px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.text h1 {
+  color: $textColor;
+}
+
+.text h4 {
+  color: $primaryColor;
+  margin-bottom: 18px;
+}
+
+
+

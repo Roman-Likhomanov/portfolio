@@ -1,0 +1,36 @@
+@import '../common/styles/sass/variables';
+
+.footerBlock {
+  background-color: $bgColor;
+
+  .footerContainer {
+    min-height: 80px;
+
+    .title {
+      color: $textColor;
+      font-family: $textFontFamily;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5em;
+      word-spacing: 0px;
+    }
+
+    .socialIconsContainer {
+      border: 1px solid;
+      display: flex;
+      align-items: center;
+
+      .socialIcon {
+        width: 30px;
+        height: 30px;
+        margin: 0 30px 0 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .footerContainer {
+    justify-content: center;
+  }
+}

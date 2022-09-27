@@ -1,5 +1,5 @@
-import style from './Main.module.css';
-import styleContainer from './../common/styles/Container.module.css';
+import style from './Main.module.scss';
+import styleContainer from '../common/styles/Container.module.scss';
 import iImg from './../assets/img/i.jpg'
 
 const Main = () => {

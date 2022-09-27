@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Skill.module.css';
+import style from './Skill.module.scss';
 import skillImg from "../../assets/img/skill.png";
 
 const Skill = (props) => {
