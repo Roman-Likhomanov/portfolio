@@ -1,10 +1,14 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .contactsBlock {
     min-height: 100vh;
     background-color: $bgSecondColor;
     padding-top: 90px;
     padding-bottom: 90px;
+    .container {
+        @include container();
+    }
     .contactsContainer {
         flex-direction: column;
         justify-content: flex-start;
@@ -19,17 +23,15 @@
                 justify-content: space-between;
             }
             .button {
+                @include button();
                 align-self:center;
-                border: 1px solid;
-                background-color: $primaryColor;
-                color: $textThirdColor;
-                cursor: pointer;
+                border: none;
                 padding: 4px 40px;
-                font-family: $textFontFamily;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 1.8em;
-                word-spacing: 0px;
+                transition: .5s;
+                &:hover {
+                    box-shadow: 0 0 18px 0 rgb(217, 84, 53);
+                    transition: .5s;
+                }
             }
         }
         .contactsMe {
@@ -56,6 +58,7 @@
     width: 100%;
     min-height: 120px;
     margin-bottom: 20px;
+    resize: none
 }
 
 .contactsMe p{
@@ -64,40 +67,41 @@
 
 @media screen and (max-width: 605px) {
     .contactsForm {
-        width: 100%;
+        width: 100%!important;
     }
     .contactsInput {
-        flex-direction: column;
+        flex-direction: column!important;
     }
     .contactsInput input{
-        width: 100%;
+        width: 100%!important;
     }
 }
 
 @media screen and (min-width: 606px) and (max-width: 850px) {
     .contactsForm {
-        width: 70%;
+        width: 70%!important;
     }
     .contactsInput {
-        flex-direction: column;
+        flex-direction: column!important;
     }
     .contactsInput input{
-       width: 100%;
+       width: 100%!important;
     }
 }
 
 @media screen and (min-width: 851px) and (max-width: 1150px) {
     .contactsInput {
-        flex-direction: column;
+        flex-direction: column!important;
     }
     .contactsInput input{
-        width: 100%;
+        width: 100%!important;
     }
 }
 
 @media screen and (max-width: 460px) {
     .contactsMe {
-      flex-direction: column;
+      flex-direction: column!important;
     }
 }
+
 

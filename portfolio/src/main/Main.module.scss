@@ -1,30 +1,61 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .mainBlock {
-  //min-height: calc(100vh - 80px);
   min-height: 100vh;
   background-color: $bgColor;
+  display: flex;
+
+  .container {
+    @include container();
+    @media screen and (max-width: 939px){
+      justify-content: center;
+    }
+  }
 
   .text {
     width: 400px;
+    & h1 {
+      color: $textColor;
+    }
+    & h4 {
+      color: $primaryColor;
+      margin-bottom: 18px;
+    }
   }
 
-  .photo {
-    width: 400px;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
+  .photo{
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 939px){
+      margin-top: 50px;
+    }
+    .img {
+      width: 350px;
+      height: 450px;
+      border-radius: 5px;
+      background-size: cover;
+      background-position: center;
+      @media screen and (max-width: 600px){
+        height: 360px;
+        width: 260px;
+      }
+    }
+    &:before {
+      content:'';
+      position: absolute;
+      height: 110%;
+      width:105%;
+      border: 5px solid $primaryColor;
+      right: 15px;
+      top: -15px;
+      z-index: -1;
+    }
   }
+
 }
 
-.text h1 {
-  color: $textColor;
-}
 
-.text h4 {
-  color: $primaryColor;
-  margin-bottom: 18px;
-}
 
 
 

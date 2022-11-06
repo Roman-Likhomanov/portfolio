@@ -8,12 +8,14 @@ const Main = () => {
     }
     return (
         <div className={style.mainBlock}>
-            <div className={styleContainer.container}>
+            <div className={style.container}>
                 <div className={style.text}>
                     <h4>I Am Roman Likhomanov</h4>
                     <h1>Frontend React Developer</h1>
                 </div>
-                <div style={i} className={style.photo}>
+                <div className={style.photo}>
+                    <div style={i} className={style.img}>
+                    </div>
                 </div>
             </div>
         </div>

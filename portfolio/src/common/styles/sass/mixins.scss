@@ -7,3 +7,44 @@
   line-height: $lineHeight;
   color: $color;
 }
+
+@mixin container() {
+  border: 1px solid;
+  min-height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin flex($direction, $justifyContent, $aliginItems, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $aliginItems;
+  flex-wrap: $wrap;
+}
+
+@mixin bgSettings() {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin button() {
+  background-color: $primaryColor;
+  color: $textThirdColor;
+  cursor: pointer;
+  padding: 4px 40px;
+  font-family: $textFontFamily;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8em;
+  word-spacing: 0px;
+}
+
+
+
+
