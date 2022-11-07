@@ -2,10 +2,9 @@
 @import '../common/styles/sass/mixins';
 
 .footerBlock {
-  background-color: $bgColor;
 
   .footerContainer {
-    min-height: 80px;
+    min-height: 60px;
 
     .title {
       @include text($textFontFamily, 14px, 400, 1.5em, $textColor);

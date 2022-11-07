@@ -3,7 +3,6 @@
 
 .mainBlock {
   min-height: 100vh;
-  background-color: $bgColor;
   display: flex;
 
   .container {
@@ -18,9 +17,16 @@
     & h1 {
       color: $textColor;
     }
-    & h4 {
+    & span {
       color: $primaryColor;
+      font-family: 'Saira', sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 1.2;
       margin-bottom: 18px;
+      @media screen and (max-width: 374px){
+        font-size: 23px;
+      }
     }
   }
 
