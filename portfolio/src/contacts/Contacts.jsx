@@ -5,7 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 
 const Contacts = () => {
     return (
-        <div className={style.contactsBlock}>
+        <div id="Contact Me" className={style.contactsBlock}>
             <Zoom>
                 <div className={`${style.container} ${style.contactsContainer}`}>
                     <Title text={'Contact me'}/>

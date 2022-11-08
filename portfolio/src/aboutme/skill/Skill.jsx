@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Skill.module.scss';
-import skillImg from "../../assets/img/skill.png";
+import skillImg from "../../assets/img/icons/skill.png";
 
 const Skill = (props) => {
 

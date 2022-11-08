@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './Footer.module.scss';
 import styleContainer from '../common/styles/Container.module.scss';
-import vk from './../assets/img/vk.svg';
-import telegram from './../assets/img/telegram.svg';
-import linkedin from './../assets/img/in.svg';
+import vk from '../assets/img/icons/vk.svg';
+import telegram from '../assets/img/icons/telegram.svg';
+import linkedin from '../assets/img/icons/in.svg';
 
 const Footer = () => {
     return (

@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 const AboutMe = () => {
     return (
-        <div className={style.aboutMeBlock}>
+        <div id="About Me" className={style.aboutMeBlock}>
             <Fade bottom>
                 <div className={`${styleContainer.container} ${style.aboutMeContainer}`}>
                     <Title text={'About me'}/>

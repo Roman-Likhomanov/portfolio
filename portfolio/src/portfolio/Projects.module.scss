@@ -1,14 +1,14 @@
 @import '../common/styles/sass/variables';
 
-.portfolioBlock {
+.projectsBlock {
   min-height: 100vh;
   padding-top: 90px;
 
-  .portfolioContainer {
+  .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
 
-    .portfolio {
+    .projects {
       border: 1px solid;
       width: 100%;
       display: flex;

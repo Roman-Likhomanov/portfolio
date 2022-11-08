@@ -4,7 +4,10 @@
 .mainBlock {
   min-height: 100vh;
   display: flex;
-
+  padding-top: 60px;
+  @media screen and (max-width: 566px) {
+    padding-top: 150px;
+  }
   .container {
     @include container();
     @media screen and (max-width: 939px){
@@ -37,9 +40,9 @@
       margin-top: 50px;
     }
     .img {
-      width: 350px;
-      height: 450px;
-      border-radius: 5px;
+      width: 320px;
+      height: 420px;
+      border-radius: 10px;
       background-size: cover;
       background-position: center;
       @media screen and (max-width: 600px){
