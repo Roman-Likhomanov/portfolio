@@ -13,7 +13,6 @@ const Skill = (props) => {
                 <div className={style.iconText}>90.0%</div>
             </div>
             <h4>{props.title}</h4>
-            <p>{props.description}</p>
         </div>
     );
 }

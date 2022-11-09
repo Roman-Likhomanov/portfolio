@@ -13,7 +13,6 @@
         justify-content: flex-start;
         .contactsForm {
             width: 50%;
-            border: 1px solid;
             display: flex;
             flex-direction: column;
             margin-top: 60px;
@@ -24,7 +23,6 @@
             .button {
                 @include button();
                 align-self:center;
-                border: none;
                 padding: 4px 40px;
                 &:hover {
                     box-shadow: 0 0 18px 0 rgb(217, 84, 53);
@@ -50,13 +48,17 @@
     padding: 8px;
     border: solid 1px rgba(0, 0, 0, .2);
     width: 31%;
+    border-radius: 5px;
 }
 
 .contactsForm textarea {
     width: 100%;
     min-height: 120px;
     margin-bottom: 20px;
-    resize: none
+    border: solid 1px rgba(0, 0, 0, .2);
+    resize: none;
+    border-radius: 5px;
+    padding: 8px;
 }
 
 .contactsMe p{

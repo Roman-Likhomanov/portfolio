@@ -29,13 +29,21 @@ const Projects = () => {
                     <Title text={'Projects'}/>
                     <div className={style.projects}>
                         <Project style={social} title={'Social network'}
-                                 description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit'}/>
-                        <Project style={cards} title={'Todo list'}
-                                 description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit'}/>
-                        <Project style={todo} title={'Game of life'}
-                                 description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit'}/>
-                        <Project style={users} title={'Weather forecast'}
-                                 description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit'}/>
+                                 description={'Online platform to connect people'}
+                                 projectLookUrl={'https://roman-likhomanov.github.io/samurai-way'}
+                                 projectCodeUrl={'https://github.com/Roman-Likhomanov/samurai-way'}/>
+                        <Project style={cards} title={'Learning cards'}
+                                 description={'Learning cards application to learn new things'}
+                                 projectLookUrl={'https://roman-likhomanov.github.io/cards'}
+                                 projectCodeUrl={'https://github.com/Roman-Likhomanov/cards'}/>
+                        <Project style={todo} title={'Todo list'}
+                                 description={'Todo list, simple way to organise everything'}
+                                 projectLookUrl={'https://roman-likhomanov.github.io/todo-toolkit'}
+                                 projectCodeUrl={'https://github.com/Roman-Likhomanov/todo-toolkit'}/>
+                        <Project style={users} title={'List of users'}
+                                 description={'List of users application for interacting with users'}
+                                 projectLookUrl={'https://roman-likhomanov.github.io/labmedia-test-task/'}
+                                 projectCodeUrl={'https://github.com/Roman-Likhomanov/labmedia-test-task/tree/master/my-app'}/>
                     </div>
                 </div>
             </Fade>

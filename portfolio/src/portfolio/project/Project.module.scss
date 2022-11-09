@@ -33,18 +33,6 @@
         transition: .5s;
       }
     }
-
-    //&::before {
-    //  position: absolute;
-    //  content: '';
-    //  background-color: $bgThirdColor;
-    //  top: 0;
-    //  bottom: 0;
-    //  left: 0;
-    //  right: 0;
-    //  opacity: 0.4;
-    //  border-radius: 10px;
-    //}
   }
 
   .projectInfo {
@@ -58,7 +46,6 @@
 
     .decription {
       margin-bottom: 20px;
-      @include text($textFontFamily, 16px, 400, 1.8em, $textColor)
     }
   }
 }

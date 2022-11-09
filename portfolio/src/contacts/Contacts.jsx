@@ -11,9 +11,9 @@ const Contacts = () => {
                     <Title text={'Contact me'}/>
                     <form className={style.contactsForm}>
                         <div className={style.contactsInput}>
-                            <input type='text'/>
-                            <input type='text'/>
-                            <input type='text'/>
+                            <input placeholder='Your Name' type='text'/>
+                            <input placeholder='Your Email' type='text'/>
+                            <input placeholder='Your Phone' type='text'/>
                         </div>
                         <textarea></textarea>
                         <button type='submit' className={style.button}>Send Message</button>
@@ -21,11 +21,11 @@ const Contacts = () => {
                     <div className={style.contactsMe}>
                         <div className={style.contactsMeEmail}>
                             <h6>Email Me</h6>
-                            <p>contact@kyrosnoriaki.com</p>
+                            <p>romanlee87@gmail.com</p>
                         </div>
                         <div className={style.contactsMePhone}>
                             <h6>Call Me</h6>
-                            <p>+1 700 333 92 96</p>
+                            <p>+7 953 503 76 69</p>
                         </div>
                     </div>
                 </div>

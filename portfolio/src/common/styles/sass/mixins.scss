@@ -9,7 +9,6 @@
 }
 
 @mixin container() {
-  border: 1px solid;
   min-height: 100%;
   width: 80%;
   margin: 0 auto;
@@ -45,6 +44,7 @@
   word-spacing: 0px;
   transition: .5s;
   border-radius: 5px;
+  border: none;
 }
 
 
